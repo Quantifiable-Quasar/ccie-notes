@@ -1,0 +1,540 @@
+{
+	"formatVersion": 2,
+	"appVersion": "0.99.1",
+	"files": [
+		{
+			"isClone": false,
+			"noteId": "root",
+			"notePath": [
+				"root"
+			],
+			"title": "root",
+			"notePosition": 10,
+			"prefix": null,
+			"isExpanded": true,
+			"type": "text",
+			"mime": "text/html",
+			"attributes": [],
+			"format": "html",
+			"attachments": [],
+			"dirFileName": "root",
+			"children": [
+				{
+					"isClone": false,
+					"noteId": "y4v6Qzszu7ju",
+					"notePath": [
+						"root",
+						"y4v6Qzszu7ju"
+					],
+					"title": "2 - Secure Connectivity",
+					"notePosition": 50,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [],
+					"format": "html",
+					"attachments": [],
+					"dirFileName": "2 - Secure Connectivity",
+					"children": [
+						{
+							"isClone": false,
+							"noteId": "9wVkNWUR9eWn",
+							"notePath": [
+								"root",
+								"y4v6Qzszu7ju",
+								"9wVkNWUR9eWn"
+							],
+							"title": "Notes",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "html",
+							"attachments": [],
+							"dirFileName": "Notes",
+							"children": [
+								{
+									"isClone": false,
+									"noteId": "dYI2natlqlNy",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"9wVkNWUR9eWn",
+										"dYI2natlqlNy"
+									],
+									"title": "2.3 - FlexVPN, DMVPN, and IPsec L2L Tunnels",
+									"notePosition": 20,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"attachments": [],
+									"dirFileName": "2.3 - FlexVPN, DMVPN, and IPsec L2L Tunnels",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "3XdcPO53nwsJ",
+											"notePath": [
+												"root",
+												"y4v6Qzszu7ju",
+												"9wVkNWUR9eWn",
+												"dYI2natlqlNy",
+												"3XdcPO53nwsJ"
+											],
+											"title": "IKE Deep Dive - WIP",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [],
+											"format": "html",
+											"dataFileName": "IKE Deep Dive - WIP.html",
+											"attachments": [
+												{
+													"attachmentId": "HLZKQiCVaLZE",
+													"title": "image.png",
+													"role": "image",
+													"mime": "image/jpg",
+													"position": 10,
+													"dataFileName": "IKE Deep Dive - WIP_image.png"
+												}
+											]
+										},
+										{
+											"isClone": false,
+											"noteId": "aqbvHkhr1AIh",
+											"notePath": [
+												"root",
+												"y4v6Qzszu7ju",
+												"9wVkNWUR9eWn",
+												"dYI2natlqlNy",
+												"aqbvHkhr1AIh"
+											],
+											"title": "IPsec",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [
+												{
+													"type": "relation",
+													"name": "internalLink",
+													"value": "3XdcPO53nwsJ",
+													"isInheritable": false,
+													"position": 10
+												}
+											],
+											"format": "html",
+											"dataFileName": "IPsec.html",
+											"attachments": [
+												{
+													"attachmentId": "DKjx5w4hcf49",
+													"title": "image.png",
+													"role": "image",
+													"mime": "image/jpg",
+													"position": 10,
+													"dataFileName": "IPsec_image.png"
+												},
+												{
+													"attachmentId": "OCCFSTTuEp0m",
+													"title": "200w.jpg",
+													"role": "image",
+													"mime": "image/jpg",
+													"position": 10,
+													"dataFileName": "IPsec_200w.jpg"
+												},
+												{
+													"attachmentId": "oQAUdQHxv8Cf",
+													"title": "image.png",
+													"role": "image",
+													"mime": "image/jpg",
+													"position": 10,
+													"dataFileName": "1_IPsec_image.png"
+												},
+												{
+													"attachmentId": "Q7CwRU0XybfJ",
+													"title": "image.png",
+													"role": "image",
+													"mime": "image/jpg",
+													"position": 10,
+													"dataFileName": "2_IPsec_image.png"
+												}
+											]
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "0dLb9r4nUu2l",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"9wVkNWUR9eWn",
+										"0dLb9r4nUu2l"
+									],
+									"title": "2.5 - VPN HA",
+									"notePosition": 30,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"attachments": [],
+									"dirFileName": "2.5 - VPN HA",
+									"children": [
+										{
+											"isClone": false,
+											"noteId": "d51pzJysZnrh",
+											"notePath": [
+												"root",
+												"y4v6Qzszu7ju",
+												"9wVkNWUR9eWn",
+												"0dLb9r4nUu2l",
+												"d51pzJysZnrh"
+											],
+											"title": "IPSec VPN HA - WIP",
+											"notePosition": 10,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [],
+											"format": "html",
+											"dataFileName": "IPSec VPN HA - WIP.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "kS7wgU5kXDWX",
+											"notePath": [
+												"root",
+												"y4v6Qzszu7ju",
+												"9wVkNWUR9eWn",
+												"0dLb9r4nUu2l",
+												"kS7wgU5kXDWX"
+											],
+											"title": "RAVPN HA on ASA - WIP",
+											"notePosition": 20,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [],
+											"format": "html",
+											"dataFileName": "RAVPN HA on ASA - WIP.html",
+											"attachments": []
+										},
+										{
+											"isClone": false,
+											"noteId": "TmzSiQZBxd3c",
+											"notePath": [
+												"root",
+												"y4v6Qzszu7ju",
+												"9wVkNWUR9eWn",
+												"0dLb9r4nUu2l",
+												"TmzSiQZBxd3c"
+											],
+											"title": "Dual Hub DMVPN - WIP",
+											"notePosition": 30,
+											"prefix": null,
+											"isExpanded": false,
+											"type": "text",
+											"mime": "text/html",
+											"attributes": [],
+											"format": "html",
+											"dataFileName": "Dual Hub DMVPN - WIP.html",
+											"attachments": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"isClone": false,
+							"noteId": "njn9HTvYe8LL",
+							"notePath": [
+								"root",
+								"y4v6Qzszu7ju",
+								"njn9HTvYe8LL"
+							],
+							"title": "2.3 - FlexVPN, DMVPN, IPsec",
+							"notePosition": 30,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "html",
+							"attachments": [],
+							"dirFileName": "2.3 - FlexVPN, DMVPN, IPsec",
+							"children": [
+								{
+									"isClone": false,
+									"noteId": "ajKp9pDoEVur",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"ajKp9pDoEVur"
+									],
+									"title": "Basic IPsec site-to-site",
+									"notePosition": 60,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "Basic IPsec site-to-site.html",
+									"attachments": [
+										{
+											"attachmentId": "cuf1z2twKAJR",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "Basic IPsec site-to-site_i.png"
+										},
+										{
+											"attachmentId": "jpTQK4YCH2OD",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "1_Basic IPsec site-to-site_i.png"
+										},
+										{
+											"attachmentId": "N5ff2LZDbuhK",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "2_Basic IPsec site-to-site_i.png"
+										},
+										{
+											"attachmentId": "nKqZYXND75Qv",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "3_Basic IPsec site-to-site_i.png"
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "tONE92rPk4bi",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"tONE92rPk4bi"
+									],
+									"title": "Hub-and-Spoke with Dynamic Routing",
+									"notePosition": 70,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "ajKp9pDoEVur",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
+									"format": "html",
+									"dataFileName": "Hub-and-Spoke with Dynamic Rou.html",
+									"attachments": [
+										{
+											"attachmentId": "1gA56sB5mdkf",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "Hub-and-Spoke with Dynamic.png"
+										},
+										{
+											"attachmentId": "TgkAVciXiJAa",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "1_Hub-and-Spoke with Dynamic.png"
+										},
+										{
+											"attachmentId": "zOVd0xUwy2NE",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "2_Hub-and-Spoke with Dynamic.png"
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "5qEuEPIot2k6",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"5qEuEPIot2k6"
+									],
+									"title": "IPsec Megalab",
+									"notePosition": 80,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "IPsec Megalab.html",
+									"attachments": [
+										{
+											"attachmentId": "M06X0AJpMAZ2",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "IPsec Megalab_image.png"
+										},
+										{
+											"attachmentId": "nnSMragMHuUR",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "1_IPsec Megalab_image.png"
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "YanznAW9XdE8",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"YanznAW9XdE8"
+									],
+									"title": "DMVPN",
+									"notePosition": 90,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "html",
+									"dataFileName": "DMVPN.html",
+									"attachments": [
+										{
+											"attachmentId": "6HkFlQo4TsbY",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "DMVPN_image.png"
+										},
+										{
+											"attachmentId": "B4V4FPE0GauD",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "1_DMVPN_image.png"
+										},
+										{
+											"attachmentId": "MvsENswhdiki",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "2_DMVPN_image.png"
+										}
+									]
+								}
+							]
+						},
+						{
+							"isClone": false,
+							"noteId": "d2LvfcdzW5fW",
+							"notePath": [
+								"root",
+								"y4v6Qzszu7ju",
+								"d2LvfcdzW5fW"
+							],
+							"title": "Labs",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "html",
+							"dataFileName": "Labs.html",
+							"attachments": []
+						}
+					]
+				},
+				{
+					"isClone": false,
+					"noteId": "gppvw6nYcgsZ",
+					"notePath": [
+						"root",
+						"gppvw6nYcgsZ"
+					],
+					"title": "CCIE_Security_v6.1_Blueprint.pdf",
+					"notePosition": 90,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "file",
+					"mime": "application/pdf",
+					"attributes": [],
+					"dataFileName": "CCIE_Security_.1_Blueprint.pdf",
+					"attachments": []
+				},
+				{
+					"isClone": false,
+					"noteId": "P89iBWavocog",
+					"notePath": [
+						"root",
+						"P89iBWavocog"
+					],
+					"title": "Some Cisco Live Links",
+					"notePosition": 110,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"attributes": [],
+					"format": "html",
+					"dataFileName": "Some Cisco Live Links.html",
+					"attachments": []
+				}
+			]
+		},
+		{
+			"noImport": true,
+			"dataFileName": "navigation.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "index.html"
+		},
+		{
+			"noImport": true,
+			"dataFileName": "style.css"
+		}
+	]
+}
