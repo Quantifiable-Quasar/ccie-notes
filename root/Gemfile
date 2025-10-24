@@ -1,0 +1,6 @@
+# Gemfile
+
+source "https://rubygems.org"
+
+# This is the only gem you need for a basic GitHub Pages setup
+gem "github-pages", group: :jekyll_plugins
