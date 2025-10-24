@@ -1,45 +1,32 @@
-<html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../../style.css">
-    <base target="_parent">
-    <title data-trilium-title>Hub-and-Spoke with Dynamic Routing</title>
-  </head>
-  
-  <body>
-    <div class="content">
-       <h1 data-trilium-h1>Hub-and-Spoke with Dynamic Routing</h1>
+---
+layout: default
+title: Hub-and-Spoke with Dynamic Rou
+---
 
-      <div class="ck-content">
-        <h2>Overview</h2>
-        <p>This lab is a hub-and-spoke pure ipsec implementation with eigrp as the
-          routing protocol. I'm not rewriting all the ipsec stuff so reference&nbsp;
-          <a
-          class="reference-link" href="Basic%20IPsec%20site-to-site.html">Basic IPsec site-to-site</a>&nbsp;for those explicit instructions.</p>
-        <figure
-        class="image">
-          <img style="aspect-ratio:950/384;" src="1_Hub-and-Spoke with Dynamic.png"
-          width="950" height="384">
-          </figure>
-          <p><strong>Steps:</strong>
-          </p>
-          <ol>
-            <li data-list-item-id="eb154d9be68e9eecec6fd542aa6bbea1b">Basic Connectivity</li>
-            <li data-list-item-id="e901755d15a9f55bb5aae032e86eba1af">IPsec</li>
-            <li data-list-item-id="e93665b94ce534a4868780ae6c8b1c200">VTI</li>
-            <li data-list-item-id="e5ee75b5569df965733af34926188e6a5">EIGRP</li>
-            <li data-list-item-id="eab40f55ae65f9cd6e2a2b202abebe691">Adding a new spoke</li>
-            <li data-list-item-id="eae8af501c863bc8b35dafe415d4c902a">Verify</li>
-          </ol>
-          <h2>IPsec&nbsp;</h2>
-          <p>&nbsp;</p>
-          <h3>Hub</h3>
-          <p>The keyring and policy are going to look a little different in this scenario.
-            For the keyring, every peer needs to be defined, so now there are three
-            entries. For the IKE profile, the match had to be wildcarded because now
-            there are multiple peers.&nbsp;</p><pre><code class="language-text-x-trilium-auto">Hub-RTR(config)#crypto ikev2 keyring ike-key
+# Hub-and-Spoke with Dynamic Routing
+## Overview
+
+This lab is a hub-and-spoke pure ipsec implementation with eigrp as the routing protocol. I'm not rewriting all the ipsec stuff so reference <a class="reference-link" href="Basic%20IPsec%20site-to-site.md">Basic IPsec site-to-site</a> for those explicit instructions.
+
+<figure class="image"><img style="aspect-ratio:950/384;" src="1_Hub-and-Spoke with Dynamic.png" width="950" height="384"></figure>
+
+**Steps:**
+
+1.  Basic Connectivity
+2.  IPsec
+3.  VTI
+4.  EIGRP
+5.  Adding a new spoke
+6.  Verify
+
+## IPsec 
+
+### Hub
+
+The keyring and policy are going to look a little different in this scenario. For the keyring, every peer needs to be defined, so now there are three entries. For the IKE profile, the match had to be wildcarded because now there are multiple peers. 
+
+```
+Hub-RTR(config)#crypto ikev2 keyring ike-key
 Hub-RTR(config-ikev2-keyring)#peer spoke1
 Hub-RTR(config-ikev2-keyring-peer)#address 192.0.2.2
 Hub-RTR(config-ikev2-keyring-peer)#pre-shared-key Cisco123
@@ -59,10 +46,15 @@ Hub-RTR(config-ikev2-profile)#match identity remote any
 Hub-RTR(config-ikev2-profile)#authentication remote pre-share 
 Hub-RTR(config-ikev2-profile)#authentication local pre-share 
 Hub-RTR(config-ikev2-profile)#keyring local ike-key
-Hub-RTR(config-ikev2-profile)#</code></pre>
-          <h3>Spoke</h3>
-          <p>This configuration example is from spoke3 which is iol-3 on the topology
-            above. This is a basic site-to-site ipsec config, so it's pretty straightforward.&nbsp;</p><pre><code class="language-text-x-trilium-auto">R3(config)#crypto ikev2 proposal ike-prop 
+Hub-RTR(config-ikev2-profile)#
+```
+
+### Spoke
+
+This configuration example is from spoke3 which is iol-3 on the topology above. This is a basic site-to-site ipsec config, so it's pretty straightforward. 
+
+```
+R3(config)#crypto ikev2 proposal ike-prop 
 R3(config-ikev2-proposal)# encryption aes-gcm-256
 R3(config-ikev2-proposal)# prf sha256
 R3(config-ikev2-proposal)# group 14
@@ -83,13 +75,17 @@ R3(cfg-crypto-trans)#crypto ipsec profile ipsec-prof
 R3(ipsec-profile)# set transform-set ike-tform 
 R3(ipsec-profile)# set ikev2-profile ike-prof
 R3(ipsec-profile)#exit
-R3(config)#</code></pre>
-          <h2>VTI</h2>
-          <p>In this scenario, the VTIs on the client work the exact same as the normal
-            site-to-site ipsec. On the hub, we need a new VTI for each tunnel that
-            is to be created. Because these are interfaces, they need to be on separate
-            networks, hence the /30s.&nbsp;</p>
-          <h3>Hub</h3><pre><code class="language-text-x-trilium-auto">interface Tunnel1
+R3(config)#
+```
+
+## VTI
+
+In this scenario, the VTIs on the client work the exact same as the normal site-to-site ipsec. On the hub, we need a new VTI for each tunnel that is to be created. Because these are interfaces, they need to be on separate networks, hence the /30s. 
+
+### Hub
+
+```
+interface Tunnel1
  ip address 10.0.0.1 255.255.255.252
  tunnel source Ethernet0/1
  tunnel destination 192.0.2.2
@@ -106,29 +102,41 @@ interface Tunnel3
  tunnel source Ethernet0/3
  tunnel destination 203.0.113.2
  tunnel protection ipsec profile ipsec-prof
-!</code></pre>
-          <h3>Spoke</h3><pre><code class="language-text-x-trilium-auto">interface Tunnel0
+!
+```
+
+### Spoke
+
+```
+interface Tunnel0
  ip address 10.0.0.10 255.255.255.252
  tunnel source Ethernet0/0
  tunnel destination 203.0.113.1
  tunnel protection ipsec profile ipsec-prof
-end</code></pre>
-          <h2>EIGRP</h2>
-          <p>Here, only the basic EIGRP configs need to be on each device. This is
-            the EIGRP on the hub, so the advertised networks are the /30s attached
-            to the VTIs. On the spoke routers, just add all the connected routes to
-            be advertised.&nbsp;</p><pre><code class="language-text-x-trilium-auto">Hub-RTR(config)#router eigrp 100
+end
+```
+
+## EIGRP
+
+Here, only the basic EIGRP configs need to be on each device. This is the EIGRP on the hub, so the advertised networks are the /30s attached to the VTIs. On the spoke routers, just add all the connected routes to be advertised. 
+
+```
+Hub-RTR(config)#router eigrp 100
 Hub-RTR(config-router)#network 10.0.0.0 0.0.0.3
 Hub-RTR(config-router)#network 10.0.0.4 0.0.0.3
-Hub-RTR(config-router)#network 10.0.0.8 0.0.0.3</code></pre>
-          <h2>Add a new spoke</h2>
-          <p>Adding a new spoke is pretty easy. On the hub some basic configs need
-            to be added, and the spoke obviously needs to be configured from scratch.
-            Below is an example of adding a new spoke to the existing topology.</p>
-          <h3>Hub</h3>
-          <p>The configs on the hub are simply the addition of the new interface, adding
-            the peer to the keyring, creating a new VTI, and adding the new network
-            to the EIGRP ASN.</p><pre><code class="language-text-x-trilium-auto">Hub-RTR(config)#int e0/0
+Hub-RTR(config-router)#network 10.0.0.8 0.0.0.3
+```
+
+## Add a new spoke
+
+Adding a new spoke is pretty easy. On the hub some basic configs need to be added, and the spoke obviously needs to be configured from scratch. Below is an example of adding a new spoke to the existing topology.
+
+### Hub
+
+The configs on the hub are simply the addition of the new interface, adding the peer to the keyring, creating a new VTI, and adding the new network to the EIGRP ASN.
+
+```
+Hub-RTR(config)#int e0/0
 Hub-RTR(config-if)#no shut
 Hub-RTR(config-if)#ip addr 128.210.211.1 255.255.255.0
 Hub-RTR(config-if)#no shut
@@ -146,10 +154,15 @@ Hub-RTR(config-if)#tunnel destination 128.210.211.2p
 Hub-RTR(config-if)#tunnel protection ipsec profile ipsec-prof
 Hub-RTR(config-if)#exit        
 Hub-RTR(config)#router eigrp 100
-Hub-RTR(config-router)#network 10.0.0.12 0.0.0.3</code></pre>
-          <h3>Spoke</h3>
-          <p>These are the complete configs to add the spoke to the network. This should
-            be achievable through the steps above, but they are here for reference.&nbsp;</p><pre><code class="language-text-x-trilium-auto">R4(config)#int e0/0
+Hub-RTR(config-router)#network 10.0.0.12 0.0.0.3
+```
+
+### Spoke
+
+These are the complete configs to add the spoke to the network. This should be achievable through the steps above, but they are here for reference. 
+
+```
+R4(config)#int e0/0
 R4(config-if)#ip addr 128.210.211.2 255.255.255.0
 R4(config-if)#no shut
 R4(config-if)#exit
@@ -195,10 +208,15 @@ R4(config)#router eigrp 100
 R4(config-router)#network 10.0.0.12 0.0.0.3 
 R4(config-router)#network 192.168.4.0 0.0.0.255  
 R4(config-router)#end
-R4#</code></pre>
-          <h2>Verify</h2>
-          <p>All this stuff is basic ipsec troubleshooting. EIGRP is in here too, but
-            this should be pretty easy.</p><pre><code class="language-text-x-trilium-auto">R3#show crypto ikev2 sa 
+R4#
+```
+
+## Verify
+
+All this stuff is basic ipsec troubleshooting. EIGRP is in here too, but this should be pretty easy.
+
+```
+R3#show crypto ikev2 sa 
  IPv4 Crypto IKEv2  SA 
 
 Tunnel-id Local                 Remote                fvrf/ivrf            Status 
@@ -210,7 +228,11 @@ Tunnel-id Local                 Remote                fvrf/ivrf            Statu
 
  IPv6 Crypto IKEv2  SA 
 
-R3#</code></pre><pre><code class="language-text-x-trilium-auto">R3#show crypto ipsec sa
+R3#
+```
+
+```
+R3#show crypto ipsec sa
 
 interface: Tunnel0
     Crypto map tag: Tunnel0-head-0, local addr 203.0.113.2
@@ -259,7 +281,11 @@ interface: Tunnel0
      outbound ah sas:
 
      outbound pcp sas:
-R3#</code></pre><pre><code class="language-text-x-trilium-auto">R3#show ip eigrp neighbors 
+R3#
+```
+
+```
+R3#show ip eigrp neighbors 
 EIGRP-IPv4 Neighbors for AS(100)
 H   Address                 Interface              Hold Uptime   SRTT   RTO  Q  Seq
                                                    (sec)         (ms)       Cnt Num
@@ -284,9 +310,5 @@ P 192.168.1.0/24, 1 successors, FD is 28185600
 P 10.0.0.4/30, 1 successors, FD is 28160000
         via 10.0.0.9 (28160000/26880000), Tunnel0
 
-R3#</code></pre>
-      </div>
-    </div>
-  </body>
-
-</html>
+R3#
+```
