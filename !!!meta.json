@@ -29,7 +29,7 @@
 					"title": "2 - Secure Connectivity",
 					"notePosition": 50,
 					"prefix": null,
-					"isExpanded": false,
+					"isExpanded": true,
 					"type": "text",
 					"mime": "text/html",
 					"attributes": [],
@@ -48,7 +48,7 @@
 							"title": "2.3 - FlexVPN, DMVPN, IPsec",
 							"notePosition": 30,
 							"prefix": null,
-							"isExpanded": false,
+							"isExpanded": true,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -161,25 +161,47 @@
 											"dataFileName": "2_Hub-and-Spoke with Dynamic.png"
 										}
 									]
-								},
+								}
+							]
+						},
+						{
+							"isClone": false,
+							"noteId": "d2LvfcdzW5fW",
+							"notePath": [
+								"root",
+								"y4v6Qzszu7ju",
+								"d2LvfcdzW5fW"
+							],
+							"title": "Labs",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": true,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "markdown",
+							"dataFileName": "Labs.md",
+							"attachments": [],
+							"dirFileName": "Labs",
+							"children": [
 								{
 									"isClone": false,
 									"noteId": "5qEuEPIot2k6",
 									"notePath": [
 										"root",
 										"y4v6Qzszu7ju",
-										"njn9HTvYe8LL",
+										"d2LvfcdzW5fW",
 										"5qEuEPIot2k6"
 									],
-									"title": "IPsec Megalab",
-									"notePosition": 80,
+									"title": "IPsec",
+									"notePosition": 10,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"attributes": [],
 									"format": "markdown",
-									"dataFileName": "IPsec Megalab.md",
+									"dataFileName": "IPsec.md",
 									"attachments": [
 										{
 											"attachmentId": "M06X0AJpMAZ2",
@@ -187,7 +209,7 @@
 											"role": "image",
 											"mime": "image/png",
 											"position": 10,
-											"dataFileName": "IPsec Megalab_image.png"
+											"dataFileName": "IPsec_image.png"
 										},
 										{
 											"attachmentId": "nnSMragMHuUR",
@@ -195,7 +217,7 @@
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "1_IPsec Megalab_image.png"
+											"dataFileName": "1_IPsec_image.png"
 										}
 									]
 								},
@@ -205,11 +227,11 @@
 									"notePath": [
 										"root",
 										"y4v6Qzszu7ju",
-										"njn9HTvYe8LL",
+										"d2LvfcdzW5fW",
 										"YanznAW9XdE8"
 									],
-									"title": "DMVPN",
-									"notePosition": 90,
+									"title": "DMVPN ",
+									"notePosition": 20,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -245,25 +267,6 @@
 									]
 								}
 							]
-						},
-						{
-							"isClone": false,
-							"noteId": "d2LvfcdzW5fW",
-							"notePath": [
-								"root",
-								"y4v6Qzszu7ju",
-								"d2LvfcdzW5fW"
-							],
-							"title": "Labs",
-							"notePosition": 40,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"attributes": [],
-							"format": "markdown",
-							"dataFileName": "Labs.md",
-							"attachments": []
 						}
 					]
 				},
@@ -315,7 +318,15 @@
 					"isExpanded": false,
 					"type": "text",
 					"mime": "text/html",
-					"attributes": [],
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "includeNoteLink",
+							"value": "gppvw6nYcgsZ",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
 					"format": "markdown",
 					"dataFileName": "index.md",
 					"attachments": []

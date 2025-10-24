@@ -1,9 +1,9 @@
 ---
 layout: default
 title: DMVPN
-parent: 2.3 - FlexVPN, DMVPN, IPsec
+parent: Labs
 ---
-# DMVPN
+# DMVPN 
 ## Overview
 
 The objective of this lab is to configure DMVPN. First, the configs are pretty much copied and pasted from [Cisco Docs](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_conn_dmvpn/configuration/15-mt/sec-conn-dmvpn-15-mt-book/sec-conn-dmvpn-dmvpn.html). Below are the objectives that modify this configuration to achieve additional objectives. 
