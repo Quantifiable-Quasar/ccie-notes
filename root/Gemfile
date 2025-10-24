@@ -2,5 +2,9 @@
 
 source "https://rubygems.org"
 
-# This is the only gem you need for a basic GitHub Pages setup
+# install theme for page
 gem "just-the-docs"
+
+# _config plugins
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
