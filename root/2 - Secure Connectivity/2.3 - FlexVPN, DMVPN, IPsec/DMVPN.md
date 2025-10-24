@@ -1,8 +1,8 @@
 ---
 layout: default
 title: DMVPN
+parent: 2.3 - FlexVPN, DMVPN, IPsec
 ---
-
 # DMVPN
 ## Overview
 

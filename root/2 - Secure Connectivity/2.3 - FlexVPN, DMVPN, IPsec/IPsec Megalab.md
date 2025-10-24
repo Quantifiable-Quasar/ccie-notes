@@ -1,8 +1,8 @@
 ---
 layout: default
 title: IPsec Megalab
+parent: 2.3 - FlexVPN, DMVPN, IPsec
 ---
-
 # IPsec Megalab
 ## Overview
 

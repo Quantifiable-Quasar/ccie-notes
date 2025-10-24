@@ -14,15 +14,7 @@
 			"isExpanded": true,
 			"type": "text",
 			"mime": "text/html",
-			"attributes": [
-				{
-					"type": "relation",
-					"name": "runOnChildNoteCreation",
-					"value": "GBZ2f3KRQUbU",
-					"isInheritable": true,
-					"position": 10
-				}
-			],
+			"attributes": [],
 			"format": "markdown",
 			"attachments": [],
 			"dirFileName": "root",
@@ -37,7 +29,7 @@
 					"title": "2 - Secure Connectivity",
 					"notePosition": 50,
 					"prefix": null,
-					"isExpanded": true,
+					"isExpanded": false,
 					"type": "text",
 					"mime": "text/html",
 					"attributes": [],
@@ -56,7 +48,7 @@
 							"title": "2.3 - FlexVPN, DMVPN, IPsec",
 							"notePosition": 30,
 							"prefix": null,
-							"isExpanded": true,
+							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -326,156 +318,6 @@
 					"attributes": [],
 					"format": "markdown",
 					"dataFileName": "index.md",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "u9VxyorVWHlW",
-					"notePath": [
-						"root",
-						"u9VxyorVWHlW"
-					],
-					"title": "Frontmatter Script",
-					"notePosition": 130,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [
-						{
-							"type": "label",
-							"name": "template",
-							"value": "",
-							"isInheritable": false,
-							"position": 10
-						}
-					],
-					"format": "markdown",
-					"dataFileName": "Frontmatter Script.md",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "GBZ2f3KRQUbU",
-					"notePath": [
-						"root",
-						"GBZ2f3KRQUbU"
-					],
-					"title": "Jekyll Frontmatter Script",
-					"notePosition": 150,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "code",
-					"mime": "application/javascript;env=backend",
-					"attributes": [],
-					"dataFileName": "Jekyll Frontmatter Script.js",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "VpdEmhpU9SDw",
-					"notePath": [
-						"root",
-						"VpdEmhpU9SDw"
-					],
-					"title": "js debug",
-					"notePosition": 170,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "code",
-					"mime": "application/javascript;env=backend",
-					"attributes": [],
-					"dataFileName": "js debug.js",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "cbq2zx4XGAvP",
-					"notePath": [
-						"root",
-						"cbq2zx4XGAvP"
-					],
-					"title": "test debug",
-					"notePosition": 180,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [],
-					"format": "markdown",
-					"dataFileName": "test debug.md",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "1YVkJQMZwo1l",
-					"notePath": [
-						"root",
-						"1YVkJQMZwo1l"
-					],
-					"title": "test again",
-					"notePosition": 190,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [],
-					"format": "markdown",
-					"dataFileName": "test again.md",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "veJOaMXPNKe8",
-					"notePath": [
-						"root",
-						"veJOaMXPNKe8"
-					],
-					"title": "test text debug",
-					"notePosition": 200,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [],
-					"format": "markdown",
-					"dataFileName": "test text debug.md",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "7ZWSUS5XCJ44",
-					"notePath": [
-						"root",
-						"7ZWSUS5XCJ44"
-					],
-					"title": "test",
-					"notePosition": 210,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [],
-					"format": "markdown",
-					"dataFileName": "test.md",
-					"attachments": []
-				},
-				{
-					"isClone": false,
-					"noteId": "BJiKCWzIkYS3",
-					"notePath": [
-						"root",
-						"BJiKCWzIkYS3"
-					],
-					"title": "test",
-					"notePosition": 220,
-					"prefix": null,
-					"isExpanded": false,
-					"type": "text",
-					"mime": "text/html",
-					"attributes": [],
-					"format": "markdown",
-					"dataFileName": "1_test.md",
 					"attachments": []
 				}
 			]

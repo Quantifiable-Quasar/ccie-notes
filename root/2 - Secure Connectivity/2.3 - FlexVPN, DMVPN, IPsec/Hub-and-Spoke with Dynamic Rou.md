@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Hub-and-Spoke with Dynamic Rou
+parent: 2.3 - FlexVPN, DMVPN, IPsec
 ---
-
 # Hub-and-Spoke with Dynamic Routing
 ## Overview
 

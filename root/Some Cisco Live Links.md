@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Some Cisco Live Links
+parent: root
 ---
-
 # Some Cisco Live Links
   
 \# Firewall  

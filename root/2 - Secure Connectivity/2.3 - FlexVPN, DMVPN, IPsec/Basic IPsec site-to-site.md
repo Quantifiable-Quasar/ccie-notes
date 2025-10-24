@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Basic IPsec site-to-site
+parent: 2.3 - FlexVPN, DMVPN, IPsec
 ---
-
 # Basic IPsec site-to-site
 ## Overview
 

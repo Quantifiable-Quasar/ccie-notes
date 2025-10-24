@@ -58,7 +58,7 @@ def export_trilium():
             for file in files:
                 # only do md files
                 if file.endswith(".md"):
-                    file_path - os.path.join(root, file)
+                    file_path = os.path.join(root, file)
                     title = os.path.splitext(file)[0]
 
                     relative_dir_path = os.path.relpath(root, EXTRACT_TO_DIRECTORY)
@@ -66,7 +66,7 @@ def export_trilium():
 
                     if relative_dir_path != ".":
                         # set parent to name of dir
-                        parent_name = os.paht.basename(relative_dir_path)
+                        parent_name = os.path.basename(relative_dir_path)
 
                     front_matter_lines = ["---", "layout: default", f"title: {title}"]
 
