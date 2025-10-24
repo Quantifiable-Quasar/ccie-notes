@@ -135,4 +135,4 @@ def git_push_changes(commit_message):
 
 if __name__ == "__main__":
     export_trilium()
-    git_push_changes("Daily Update")
+    git_push_changes("Content Update")
