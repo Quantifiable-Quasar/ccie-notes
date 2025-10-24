@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Some Cisco Live Links
-parent: root
+parent: Root
 ---
 # Some Cisco Live Links
   
