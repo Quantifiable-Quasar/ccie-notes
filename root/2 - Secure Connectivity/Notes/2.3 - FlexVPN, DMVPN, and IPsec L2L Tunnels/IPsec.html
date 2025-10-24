@@ -1,0 +1,98 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>IPsec</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>IPsec</h1>
+
+      <div class="ck-content">
+        <h2>Modes</h2>
+        <p>*dont really like the name of this section, but idk what to call it</p>
+        <p><strong>Tunnel: </strong>Encapsulates packet in entirely new header (encrypt
+          everything)</p>
+        <figure class="image">
+          <img style="aspect-ratio:538/392;" src="1_IPsec_image.png" width="538"
+          height="392">
+        </figure>
+        <p><strong>Transport:</strong> Encrypts only payload and shoves ESP header
+          in existing headers
+          <br>- used primarily for peer-to-peer connections</p>
+        <figure class="image">
+          <img style="aspect-ratio:548/388;" src="2_IPsec_image.png" width="548"
+          height="388">
+        </figure>
+        <p><strong>ESP </strong>is pretty much the only option used for IPsec (AH
+          exists but no one should be using it)</p>
+        <ul>
+          <li data-list-item-id="e7ef71cd968d7bee9ea045284b2c4b843">port 50</li>
+          <li data-list-item-id="edcab563fbf0b8e1c4afb8dab78079009">Everything behind ESP header is encrypted</li>
+          <li data-list-item-id="e0611feb2808f2f07bd478fe1f54a9679">All that and the ESP header are authenticated</li>
+          <li data-list-item-id="e17b280d0366521639adda3ffeedb538a"><a href="https://datatracker.ietf.org/doc/html/rfc4303">RFC 4303</a>
+          </li>
+          <li data-list-item-id="ef3eddf8584c760460d729279e59ab1f3">
+            <p>Anti-Replay through sequence numbers+auth<strong>:</strong>
+            </p>
+            <p>&nbsp;</p>
+          </li>
+        </ul>
+        <h3><strong>ISAKMP/IKE</strong></h3>
+        <p><a class="reference-link" href="IKE%20Deep%20Dive%20-%20WIP.html">IKE Deep Dive - WIP</a>&nbsp;-
+          Notes on IKE</p>
+        <p>There's ISAKMP which is commonly associated with IKEv1 and there is also
+          IKEv2. Do not use v1.</p>
+        <p>IKEv1 has main and aggressive mode. most implementations use aggressive
+          mode</p>
+        <figure class="image">
+          <img style="aspect-ratio:553/343;" src="IPsec_image.png" width="553" height="343">
+        </figure>
+        <h3>Implementation</h3>
+        <p>All this stuff is configured in the IPsec Profile. That controls IKE phase
+          2 SA paramaters.</p>
+        <p>Most implementations of IPsec are VTI based. Crypto maps can exist, but
+          the VTI is the way to go.</p>
+        <p>There are implementation topolgies</p>
+        <p><strong>Site-to-Site:</strong>
+        </p>
+        <ul>
+          <li data-list-item-id="ea3724834203308e7fa91e442a9f3d243">Full Mesh</li>
+          <li data-list-item-id="e16ff8667f1015c7b238ac7281cfad334">Hub-and-Spoke</li>
+          <li data-list-item-id="e195a70ad817b1c17b1e36d933eab2e33">DMVPN</li>
+          <li data-list-item-id="e4b22ba9c2b84088455841718102bc1c8">Static VTI</li>
+          <li data-list-item-id="e7f6eda2ce91001e94a1e9a8aaa0ef32f">GET VPN</li>
+        </ul>
+        <p><strong>Remote Access:</strong>
+        </p>
+        <ul>
+          <li data-list-item-id="e88b89d4bd7203f87c83d033135d6615c">Easy VPN</li>
+          <li data-list-item-id="e96caa922a7beb7dac5b2914aa9409cce">DVTI</li>
+        </ul>
+        <h2>Resources</h2>
+        <ul class="todo-list">
+          <li data-list-item-id="e0ba3126c280ff84e672671a4d9650415">
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">CCIE Professional Development Series Network Security Technologies and Solutions Ch 15</span>
+            </label>
+          </li>
+          <li data-list-item-id="ea2e2040463088bdf531845c95767b8b5">
+            <label class="todo-list__label">
+              <input type="checkbox" checked="checked" disabled="disabled"><span class="todo-list__label__description">Integrated Security Technologies and Solutions - Volume II&nbsp;</span>
+            </label>
+          </li>
+          <li data-list-item-id="ee4d90650409fc80c5e40610b4a293a82">
+            <label class="todo-list__label">
+              <input type="checkbox" disabled="disabled"><span class="todo-list__label__description">&nbsp;</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+</html>

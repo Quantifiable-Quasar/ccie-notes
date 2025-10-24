@@ -1,0 +1,105 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../style.css">
+    <base target="_parent">
+    <title data-trilium-title>IKE Deep Dive - WIP</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>IKE Deep Dive - WIP</h1>
+
+      <div class="ck-content">
+        <p><a href="https://www.ciscolive.com/on-demand/on-demand-library.html?search=ike&amp;search=ike#/video/1636411415448001rnlc">https://www.ciscolive.com/on-demand/on-demand-library.html?search=ike&amp;search=ike#/video/1636411415448001rnlc</a>
+        </p>
+        <h2>Creation of IKE</h2>
+        <p>1998: super high cost, hardware couldn't evolve. (hardware had to be replaced
+          when new auth method) therefore ike had to be invented</p>
+        <ul>
+          <li data-list-item-id="e6c2e237d94f6ec59f8259a7632125947">success - went from des to 3des to aes</li>
+          <li data-list-item-id="e7dee2cb23b89adf80421966fe98b97c0">support certs/pki</li>
+          <li data-list-item-id="eebc6f477fad5672694c3e282d260dabe">catered to multiple situations</li>
+        </ul>
+        <p>keys were generated on the fly</p>
+        <ul>
+          <li data-list-item-id="e4ec7f5028dda26a7365113f6b7c7a07b">ike actually can have static keys manually defined</li>
+          <li data-list-item-id="e9803f41e8f708b76c2f59bfeebbf11ac">but this method allows for perfect forward secrecy</li>
+        </ul>
+        <p>Prevents Man-in-the-middle attacks</p>
+        <p>IKE was hard for many to understand because of the number of RFCs to define
+          it</p>
+        <ul>
+          <li data-list-item-id="eea21ebec1b77a41bd8048fb59d70f24b">went in the way for adoption</li>
+          <li data-list-item-id="e4393e8dc14c2ef6616adc74bc5597c29">very abstract and complicated to understand</li>
+        </ul>
+        <p>12 RFCs to define IPsec!</p>
+        <figure class="image">
+          <img style="aspect-ratio:701/401;" src="IKE Deep Dive - WIP_image.png"
+          width="701" height="401">
+        </figure>
+        <p><strong>strict</strong> distinction between control and data plane</p>
+        <ul>
+          <li data-list-item-id="ea8bd627a0f3f8432a38e6fa928df5e85">IKE negotiates keys (ike is a root process that works at the same level
+            of bgp or eigrp)</li>
+          <li data-list-item-id="e40ecdaa8a2ca102a97e29cd4a3b54755">another set of protocols actually carry the data (works on the data plane
+            like gre)</li>
+        </ul>
+        <h2>ISAKMP</h2>
+        <p>bgp comp: bgp just generates routes doesn't send any traffic</p>
+        <p>Phase 1:</p>
+        <ul>
+          <li data-list-item-id="ec9ea498083127c6839b58ffa33d7d645">definies control plane Phase 2:</li>
+          <li data-list-item-id="ec8971242694a8a2b6ff855a7f9f1f21e">push over data plan</li>
+        </ul>
+        <p>2 modes:</p>
+        <p>main mode:</p>
+        <ul>
+          <li data-list-item-id="e2dafeadd90141ea9f0b961ab75f2dd00">6 packet</li>
+          <li data-list-item-id="e1c5e7ae9637d6f955c621c2f1bc8dd03">full identity protection</li>
+          <li data-list-item-id="e3155b3a1bb5dd4ef7643c29390189393">better anti-dos protection (dos attack is kinda bs people dont really
+            do it)</li>
+        </ul>
+        <p>message 1/2</p>
+        <ul>
+          <li data-list-item-id="e2c59b73eb9e1e9855c5797e4177b5f59">negotiate crypto attributes (auth metod, enc cypher, integrity hash, lifetime
+            of sa, dh group)</li>
+          <li data-list-item-id="ead2b6a157f4bac0ff2efbaf72e595cd4">not auth - not enc message 3/4</li>
+          <li data-list-item-id="e58b0f8215e8e1701ff80f898a9e59a36">exchange dh key value, nonnce</li>
+          <li data-list-item-id="efcf58abaeeaa7f937cc4959adbc52546">nat detection happens here</li>
+          <li data-list-item-id="ed32ed75de865a62ad4d03c36e8ef36c9">further comms are enc and secure</li>
+          <li data-list-item-id="eff53c9f44697002d4fab95f5e974ab4c">peer not auth yet message 5/6</li>
+          <li data-list-item-id="ed065db3c18868dceb9b18b58a2adf618">exchange certs</li>
+          <li data-list-item-id="edeb74459cd548ca06ec836d6ff7a62e2">provide identity with psk or cert</li>
+          <li data-list-item-id="e60428f221f1d4c66f2b1909a5de9a44c">validate previous messages - prevents session hijack</li>
+          <li data-list-item-id="e02d54795bbf9c089a479f296ea66277b">use udp/4500 if nat in mm3+4</li>
+          <li data-list-item-id="e02df7441eb9ed9bbc6fa49a7227a4064">encrypted - auth</li>
+        </ul>
+        <p>Summary (3rtt): mm1+2 - negotiate crypto settings mm3+4 - key exchange
+          mm5+6 - prove identity (encrypted - unauthenticated)</p>
+        <p>after that everything should be encrypted + authenticated</p>
+        <p>aggressive mode (1rtt-ish): am1 - send suggested crypto, dh value, init
+          identity (unencrypt - unauth) am2 - accept paramaters from am1, resp identity,
+          proof of resp identity (unencrypt - auth) am3 - sends full identity/proof
+          of init identity</p>
+        <p>problems:</p>
+        <ul>
+          <li data-list-item-id="e30d2485f96bf07ad6f77b738e74042b6">expose to mitm (bombard resp with init requests like tcp syn attack)
+            <ul>
+              <li data-list-item-id="ee9a6f94e0ed987bb83dab6467df1c5ed">bc dh is computed so early it takes longer to process this first packet</li>
+            </ul>
+          </li>
+        </ul>
+        <p>ikev1 - phase 2</p>
+        <p>control plane is secured now we need data plane channel the control and
+          data plane dont have to be the same encryption methods</p>
+        <p>quick mode: qm1 - sends sa, nonce, key exchange (if pfs), traffic selector,
+          nat info qm2 - yes or no? qm3 - ack</p>
+        <p>qm4 does exist, but no one uses it</p>
+      </div>
+    </div>
+  </body>
+
+</html>
