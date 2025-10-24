@@ -7,7 +7,7 @@ import subprocess
 import shutil
 from trilium_py.client import ETAPI
 
-TRILIUM_API_TOKEN = os.environ.get(TRILIUM_API_TOKEN)
+TRILIUM_API_TOKEN = os.environ.get("TRILIUM_API_TOKEN")
 TRILIUM_SERVER_URL = os.environ.get("TRILIUM_URL", "http://localhost:8080")
 NOTE_ID_TO_EXPORT = os.environ.get("TRILIUM_NOTE_ID", "root")
 OUTPUT_FILE_PATH = "./trilium-notes/trilium-export.zip"
@@ -37,7 +37,7 @@ def export_trilium():
         print(f"Preparing target directory: '{EXTRACT_TO_DIRECTORY}'...")
         if os.path.exists(EXTRACT_TO_DIRECTORY):
             try:
-                shutil.rmtree(EXTRACT_TO_DIRECTORY):
+                shutil.rmtree(EXTRACT_TO_DIRECTORY)
                 print(" Removed existing directory and its contents.")
             except OSError as e:
                 print(f" Error: Could not remove directory {EXTRACT_TO_DIRECTORY}: {e}")
@@ -56,7 +56,7 @@ def export_trilium():
         for root, dirs, files in os.walk(EXTRACT_TO_DIRECTORY):
             for file in files:
                 # only do md files
-                if file.endswith(".md")
+                if file.endswith(".md"):
                     file_path - os.path.join(root, file)
                     title = os.path.splitext(file)[0]
 
