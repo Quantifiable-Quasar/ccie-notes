@@ -10,8 +10,9 @@ from trilium_py.client import ETAPI
 TRILIUM_API_TOKEN = os.environ.get("TRILIUM_API_TOKEN")
 TRILIUM_SERVER_URL = os.environ.get("TRILIUM_URL", "http://localhost:8080")
 NOTE_ID_TO_EXPORT = os.environ.get("TRILIUM_NOTE_ID", "root")
-OUTPUT_FILE_PATH = "./trilium-notes/trilium-export.zip"
-EXTRACT_TO_DIRECTORY = "./trilium-notes/"
+OUTPUT_FILE_PATH = "./trilium-export.zip"
+EXTRACT_TO_DIRECTORY = "."
+EXTRACT_ROOT_FOLDER = "./root/"
 
 print(f"Connecting to Trilium at {TRILIUM_SERVER_URL}...")
 
@@ -34,13 +35,13 @@ def export_trilium():
         print(f"Exported notes")
 
                 # empty extraction directory
-        print(f"Preparing target directory: '{EXTRACT_TO_DIRECTORY}'...")
-        if os.path.exists(EXTRACT_TO_DIRECTORY):
+        print(f"Preparing target directory: '{EXTRACT_ROOT_FOLDER}'...")
+        if os.path.exists(EXTRACT_ROOT_FOLDER):
             try:
-                shutil.rmtree(EXTRACT_TO_DIRECTORY)
+                shutil.rmtree(EXTRACT_ROOT_FOLDER)
                 print(" Removed existing directory and its contents.")
             except OSError as e:
-                print(f" Error: Could not remove directory {EXTRACT_TO_DIRECTORY}: {e}")
+                print(f" Error: Could not remove directory {EXTRACT_ROOT_FOLDER}: {e}")
                 sys.exit(1)
         else:
             print(" Directory does not exist, no cleanup needed.")
@@ -53,7 +54,7 @@ def export_trilium():
 
         print("Adding Jekyll front matter to Md files")
 
-        for root, dirs, files in os.walk(EXTRACT_TO_DIRECTORY):
+        for root, dirs, files in os.walk(EXTRACT_ROOT_FOLDER):
             for file in files:
                 # only do md files
                 if file.endswith(".md"):
@@ -94,7 +95,6 @@ def export_trilium():
         print("delted zip file")
         
         print("finished")
-        sys.exit(0)
 
     except Exception as e:
         print(f"An error occured during the export: {e}") # fix to display error
