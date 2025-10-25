@@ -8,7 +8,7 @@ parent: Labs
 
 This lab is attempting to cover most of the IPsec scenarios that will come up. The below topology is used. I put pretty much every issue I encountered in the troubleshooting section. This is for a few reasons, first, I want to completely document the troubleshooting process. Second, I want to compile issues for a later troubleshooting lab. This does make me look like an idiot, as there are several stupid mistakes, but it's all there. 
 
-<figure class="image"><img style="aspect-ratio:636/359;" src="1_IPsec_image.png" width="636" height="359"></figure>
+<figure class="image"><img style="aspect-ratio:805/471;" src="IPsec_image.png" width="805" height="471"></figure>
 
 1.  Implement a hub/spoke IKEv1 Crypto Map solution with ASAv and spoke1 as the spokes
 2.  Update to IKEv2 VTI based with PSK authentication
@@ -117,7 +117,7 @@ interface: Ethernet0/0
 Hub-RTR#
 ```
 
-<figure class="image"><img style="aspect-ratio:840/391;" src="4_IPsec_image.png" width="840" height="391"></figure>
+<figure class="image"><img style="aspect-ratio:840/391;" src="5_IPsec_image.png" width="840" height="391"></figure>
 
 ### ASA Crypto Map Configuration
 
@@ -827,7 +827,7 @@ Hub-RTR(config)#
 Hub-RTR(config)#
 ```
 
-<figure class="image"><img style="aspect-ratio:1447/161;" src="3_IPsec_image.png" width="1447" height="161"></figure>
+<figure class="image"><img style="aspect-ratio:1447/161;" src="4_IPsec_image.png" width="1447" height="161"></figure>
 
 As we can see from that pcap, NAT is causing some issues. I intuitively knew this would happen (that's why this use case is here), but I just wanted to see if it would actually cause problems. 
 
@@ -841,7 +841,7 @@ spoke2(config)#
 
 Now, NAT-T is enabled, and the packet capture reflects that.
 
-<figure class="image"><img style="aspect-ratio:1356/332;" src="IPsec_image.png" width="1356" height="332"></figure>
+<figure class="image"><img style="aspect-ratio:1356/332;" src="1_IPsec_image.png" width="1356" height="332"></figure>
 
 Still getting that phase 2 error though.
 
