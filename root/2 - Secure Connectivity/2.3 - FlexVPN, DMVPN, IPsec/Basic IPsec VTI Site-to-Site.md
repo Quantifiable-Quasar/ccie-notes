@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Basic IPsec site-to-site
+title: Basic IPsec VTI Site-to-Site
 parent: 2.3 - FlexVPN, DMVPN, IPsec
 ---
-# Basic IPsec site-to-site
+# Basic IPsec VTI Site-to-Site
 ## Overview
 
 The goal of this lab is to create the most basic IPsec site to site tunnel possible. This will serve as a “home base” for the other IPsec based configs and will be referenced by them. Below is the topology used and the high-level steps are listed.
 
-<figure class="image"><img style="aspect-ratio:519/218;" src="2_Basic IPsec site-to-site_i.png" width="519" height="218"></figure>
+<figure class="image"><img style="aspect-ratio:519/218;" src="1_Basic IPsec VTI Site-to-Si.png" width="519" height="218"></figure>
 
 1.  Establish basic connectivity
 2.  ikev2 proposal
@@ -169,4 +169,4 @@ R1#
 
 This is what a packet capture looks like for that encrypted traffic. The ESP stuff is what's going over the VPN.
 
-<figure class="image"><img style="aspect-ratio:1624/422;" src="1_Basic IPsec site-to-site_i.png" width="1624" height="422"></figure>
+<figure class="image"><img style="aspect-ratio:1624/422;" src="Basic IPsec VTI Site-to-Si.png" width="1624" height="422"></figure>

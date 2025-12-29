@@ -6,9 +6,9 @@ parent: 2.3 - FlexVPN, DMVPN, IPsec
 # Hub-and-Spoke with Dynamic Routing
 ## Overview
 
-This lab is a hub-and-spoke pure ipsec implementation with eigrp as the routing protocol. I'm not rewriting all the ipsec stuff so reference <a class="reference-link" href="Basic%20IPsec%20site-to-site.md">Basic IPsec site-to-site</a> for those explicit instructions.
+This lab is a hub-and-spoke pure ipsec implementation with eigrp as the routing protocol. I'm not rewriting all the ipsec stuff so reference <a class="reference-link" href="Basic%20IPsec%20VTI%20Site-to-Site.md">Basic IPsec site-to-site</a> for those explicit instructions.
 
-<figure class="image"><img style="aspect-ratio:950/384;" src="1_Hub-and-Spoke with Dynamic.png" width="950" height="384"></figure>
+<figure class="image"><img style="aspect-ratio:950/384;" src="Hub-and-Spoke with Dynamic.png" width="950" height="384"></figure>
 
 **Steps:**
 

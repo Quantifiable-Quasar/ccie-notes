@@ -118,7 +118,7 @@
 							"title": "2.3 - FlexVPN, DMVPN, IPsec",
 							"notePosition": 40,
 							"prefix": null,
-							"isExpanded": false,
+							"isExpanded": true,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -135,31 +135,23 @@
 										"njn9HTvYe8LL",
 										"ajKp9pDoEVur"
 									],
-									"title": "Basic IPsec site-to-site",
-									"notePosition": 60,
+									"title": "Basic IPsec VTI Site-to-Site",
+									"notePosition": 80,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"attributes": [],
 									"format": "markdown",
-									"dataFileName": "Basic IPsec site-to-site.md",
+									"dataFileName": "Basic IPsec VTI Site-to-Site.md",
 									"attachments": [
-										{
-											"attachmentId": "cuf1z2twKAJR",
-											"title": "image.png",
-											"role": "image",
-											"mime": "image/png",
-											"position": 10,
-											"dataFileName": "Basic IPsec site-to-site_i.png"
-										},
 										{
 											"attachmentId": "jpTQK4YCH2OD",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "1_Basic IPsec site-to-site_i.png"
+											"dataFileName": "Basic IPsec VTI Site-to-Si.png"
 										},
 										{
 											"attachmentId": "N5ff2LZDbuhK",
@@ -167,15 +159,7 @@
 											"role": "image",
 											"mime": "image/png",
 											"position": 10,
-											"dataFileName": "2_Basic IPsec site-to-site_i.png"
-										},
-										{
-											"attachmentId": "nKqZYXND75Qv",
-											"title": "image.png",
-											"role": "image",
-											"mime": "image/png",
-											"position": 10,
-											"dataFileName": "3_Basic IPsec site-to-site_i.png"
+											"dataFileName": "1_Basic IPsec VTI Site-to-Si.png"
 										}
 									]
 								},
@@ -189,7 +173,7 @@
 										"tONE92rPk4bi"
 									],
 									"title": "Hub-and-Spoke with Dynamic Routing",
-									"notePosition": 70,
+									"notePosition": 90,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
@@ -207,30 +191,34 @@
 									"dataFileName": "Hub-and-Spoke with Dynamic Rou.md",
 									"attachments": [
 										{
-											"attachmentId": "1gA56sB5mdkf",
-											"title": "image.png",
-											"role": "image",
-											"mime": "image/jpg",
-											"position": 10,
-											"dataFileName": "Hub-and-Spoke with Dynamic.png"
-										},
-										{
 											"attachmentId": "TgkAVciXiJAa",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "1_Hub-and-Spoke with Dynamic.png"
-										},
-										{
-											"attachmentId": "zOVd0xUwy2NE",
-											"title": "image.png",
-											"role": "image",
-											"mime": "image/png",
-											"position": 10,
-											"dataFileName": "2_Hub-and-Spoke with Dynamic.png"
+											"dataFileName": "Hub-and-Spoke with Dynamic.png"
 										}
 									]
+								},
+								{
+									"isClone": false,
+									"noteId": "kG59sfZl0qf4",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"kG59sfZl0qf4"
+									],
+									"title": "Resources",
+									"notePosition": 100,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "markdown",
+									"dataFileName": "Resources.md",
+									"attachments": []
 								}
 							]
 						},
@@ -255,83 +243,75 @@
 							"children": [
 								{
 									"isClone": false,
-									"noteId": "5qEuEPIot2k6",
+									"noteId": "GpqMN2m7riL1",
 									"notePath": [
 										"root",
 										"y4v6Qzszu7ju",
 										"d2LvfcdzW5fW",
-										"5qEuEPIot2k6"
+										"GpqMN2m7riL1"
 									],
-									"title": "IPsec",
+									"title": "Site-to-Site VPNs",
 									"notePosition": 10,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
-									"attributes": [],
+									"attributes": [
+										{
+											"type": "relation",
+											"name": "internalLink",
+											"value": "gJlWD4vacXMB",
+											"isInheritable": false,
+											"position": 10
+										}
+									],
 									"format": "markdown",
-									"dataFileName": "IPsec.md",
+									"dataFileName": "Site-to-Site VPNs.md",
 									"attachments": [
 										{
-											"attachmentId": "ajOvgyj70OHZ",
+											"attachmentId": "6fuN9bZmlJS5",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "IPsec_image.png"
+											"dataFileName": "Site-to-Site VPNs_image.png"
 										},
 										{
-											"attachmentId": "H1nBSbbfOkVL",
-											"title": "image.png",
-											"role": "image",
-											"mime": "image/png",
-											"position": 10,
-											"dataFileName": "1_IPsec_image.png"
-										},
-										{
-											"attachmentId": "M06X0AJpMAZ2",
-											"title": "image.png",
-											"role": "image",
-											"mime": "image/png",
-											"position": 10,
-											"dataFileName": "2_IPsec_image.png"
-										},
-										{
-											"attachmentId": "nnSMragMHuUR",
+											"attachmentId": "iFY6ro7NtHvN",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "3_IPsec_image.png"
+											"dataFileName": "1_Site-to-Site VPNs_image.png"
 										},
 										{
-											"attachmentId": "oAlxKHl9fPvV",
-											"title": "image.png",
-											"role": "image",
-											"mime": "image/png",
-											"position": 10,
-											"dataFileName": "4_IPsec_image.png"
-										},
-										{
-											"attachmentId": "RIUhJNAPpNz9",
+											"attachmentId": "MzSoC47NGgHj",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "5_IPsec_image.png"
+											"dataFileName": "2_Site-to-Site VPNs_image.png"
+										},
+										{
+											"attachmentId": "r0EHFaufYoLV",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "3_Site-to-Site VPNs_image.png"
 										}
 									]
 								},
 								{
 									"isClone": false,
-									"noteId": "YanznAW9XdE8",
+									"noteId": "xgLjXA5dToPj",
 									"notePath": [
 										"root",
 										"y4v6Qzszu7ju",
 										"d2LvfcdzW5fW",
-										"YanznAW9XdE8"
+										"xgLjXA5dToPj"
 									],
-									"title": "DMVPN ",
+									"title": "Infrastructure Segmentation",
 									"notePosition": 20,
 									"prefix": null,
 									"isExpanded": false,
@@ -339,33 +319,101 @@
 									"mime": "text/html",
 									"attributes": [],
 									"format": "markdown",
-									"dataFileName": "DMVPN.md",
+									"dataFileName": "Infrastructure Segmentation.md",
 									"attachments": [
 										{
-											"attachmentId": "6HkFlQo4TsbY",
+											"attachmentId": "10FCj3C0MPAn",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "DMVPN_image.png"
+											"dataFileName": "Infrastructure Segmentatio.png"
 										},
 										{
-											"attachmentId": "B4V4FPE0GauD",
+											"attachmentId": "6ixqfd6oMlzg",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "1_DMVPN_image.png"
+											"dataFileName": "1_Infrastructure Segmentatio.png"
 										},
 										{
-											"attachmentId": "MvsENswhdiki",
+											"attachmentId": "GwoGvoRgW1C1",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "2_Infrastructure Segmentatio.png"
+										},
+										{
+											"attachmentId": "TnQL4KZbGN80",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/jpg",
 											"position": 10,
-											"dataFileName": "2_DMVPN_image.png"
+											"dataFileName": "3_Infrastructure Segmentatio.png"
 										}
 									]
+								}
+							]
+						},
+						{
+							"isClone": false,
+							"noteId": "gJlWD4vacXMB",
+							"notePath": [
+								"root",
+								"y4v6Qzszu7ju",
+								"gJlWD4vacXMB"
+							],
+							"title": "Todo",
+							"notePosition": 70,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "markdown",
+							"dataFileName": "Todo.md",
+							"attachments": []
+						},
+						{
+							"isClone": false,
+							"noteId": "WYwDBkPITBGx",
+							"notePath": [
+								"root",
+								"y4v6Qzszu7ju",
+								"WYwDBkPITBGx"
+							],
+							"title": "2.5 Infrastructure Segmentation Methods",
+							"notePosition": 80,
+							"prefix": null,
+							"isExpanded": true,
+							"type": "text",
+							"mime": "text/html",
+							"attributes": [],
+							"format": "markdown",
+							"attachments": [],
+							"dirFileName": "2.5 Infrastructure Segmentation Methods",
+							"children": [
+								{
+									"isClone": false,
+									"noteId": "OwzlQipYzABC",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"WYwDBkPITBGx",
+										"OwzlQipYzABC"
+									],
+									"title": "resources",
+									"notePosition": 10,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "markdown",
+									"dataFileName": "resources.md",
+									"attachments": []
 								}
 							]
 						}
