@@ -71,7 +71,7 @@ R1(config-ikev2-profile)#
 
 ## IPsec Profile
 
-The IPSec profile defines phase 2 connection paramaters. It includes the phase 1 IKE profile and the transform set. The transform set includes the cryptographic functions that can be used for phase 2. 
+The IPsec profile defines phase 2 connection parameters. It includes the phase 1 IKE profile and the transform set. The transform set includes the cryptographic functions that can be used for phase 2. 
 
 ```
 R1(config)#crypto ipsec transform-set ipsec-transform esp-gcm 256

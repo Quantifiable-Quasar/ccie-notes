@@ -10,10 +10,10 @@ parent: 2 - Secure Connectivity
 - [ ] Front Door VRP
 - [ ] Tunnel-to-VRF Mapping
 - [ ] Dual FVRF
-- [ ] Cisco IOS CA/Enroll clients with SCEP
-- [ ] Cert based IPsec
-- [ ] Crypto Map IPsec
-- [ ] DMVPN basic
+- [x] Cisco IOS CA/Enroll clients with SCEP
+- [x] Cert based IPsec
+- [x] Crypto Map IPsec
+- [x] DMVPN basic
 - [ ] Dual Hub DMVPN
 - [ ] Dual Cloud DMVPN
 - [ ] FlexVPN Basic

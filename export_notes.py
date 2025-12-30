@@ -10,9 +10,9 @@ from trilium_py.client import ETAPI
 TRILIUM_API_TOKEN = os.environ.get("TRILIUM_API_TOKEN")
 TRILIUM_SERVER_URL = os.environ.get("TRILIUM_URL", "http://localhost:8080")
 NOTE_ID_TO_EXPORT = os.environ.get("TRILIUM_NOTE_ID", "root")
-OUTPUT_FILE_PATH = "./trilium-export.zip"
-EXTRACT_TO_DIRECTORY = "."
-EXTRACT_ROOT_FOLDER = "./root/"
+OUTPUT_FILE_PATH = "/home/tm/ccie-notes/trilium-export.zip"
+EXTRACT_TO_DIRECTORY = "/home/tm/ccie-notes/"
+EXTRACT_ROOT_FOLDER = "/home/tm/ccie-notes/root/"
 
 print(f"Connecting to Trilium at {TRILIUM_SERVER_URL}...")
 

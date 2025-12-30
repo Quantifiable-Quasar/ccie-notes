@@ -48,7 +48,7 @@
 							"title": "2.2 - IOS CA for VPN Auth",
 							"notePosition": 30,
 							"prefix": null,
-							"isExpanded": false,
+							"isExpanded": true,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -58,51 +58,59 @@
 							"children": [
 								{
 									"isClone": false,
-									"noteId": "ebgdZsdMc3oH",
+									"noteId": "6eZs8xukswOl",
 									"notePath": [
 										"root",
 										"y4v6Qzszu7ju",
 										"TnaRhLa5xHfX",
-										"ebgdZsdMc3oH"
+										"6eZs8xukswOl"
 									],
-									"title": "WIP - IOS XE CA and SCEP",
-									"notePosition": 10,
+									"title": "IOSv CA",
+									"notePosition": 30,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"attributes": [],
 									"format": "markdown",
-									"dataFileName": "WIP - IOS XE CA and SCEP.md",
+									"dataFileName": "IOSv CA.md",
 									"attachments": [
 										{
-											"attachmentId": "6N5Hw3ST4scc",
+											"attachmentId": "5HuTIbS8MmJx",
 											"title": "image.png",
 											"role": "image",
 											"mime": "image/png",
 											"position": 10,
-											"dataFileName": "WIP - IOS XE CA and SCEP_i.png"
+											"dataFileName": "IOSv CA_image.png"
+										},
+										{
+											"attachmentId": "PQXSv0OrxQdC",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "1_IOSv CA_image.png"
 										}
 									]
 								},
 								{
 									"isClone": false,
-									"noteId": "TIyE7E8PCE5y",
+									"noteId": "zF5MWZvhtMZ8",
 									"notePath": [
 										"root",
 										"y4v6Qzszu7ju",
 										"TnaRhLa5xHfX",
-										"TIyE7E8PCE5y"
+										"zF5MWZvhtMZ8"
 									],
-									"title": "TODO - Offline Root and Sub CA ",
-									"notePosition": 20,
+									"title": "Cert based IPsec ",
+									"notePosition": 40,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"attributes": [],
 									"format": "markdown",
-									"dataFileName": "TODO - Offline Root and Sub CA.md",
+									"dataFileName": "Cert based IPsec.md",
 									"attachments": []
 								}
 							]
@@ -219,6 +227,43 @@
 									"format": "markdown",
 									"dataFileName": "Resources.md",
 									"attachments": []
+								},
+								{
+									"isClone": false,
+									"noteId": "grBM3Ft58iDX",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"grBM3Ft58iDX"
+									],
+									"title": "Basic DMVPN",
+									"notePosition": 110,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "markdown",
+									"dataFileName": "Basic DMVPN.md",
+									"attachments": [
+										{
+											"attachmentId": "HswL1K2uLEeg",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "Basic DMVPN_image.png"
+										},
+										{
+											"attachmentId": "rpo26pUMFVU5",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/png",
+											"position": 10,
+											"dataFileName": "1_Basic DMVPN_image.png"
+										}
+									]
 								}
 							]
 						},
@@ -387,7 +432,7 @@
 							"title": "2.5 Infrastructure Segmentation Methods",
 							"notePosition": 80,
 							"prefix": null,
-							"isExpanded": true,
+							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
