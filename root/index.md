@@ -9,8 +9,8 @@ I have some plans for programmatic troubleshooting which will end up in the same
 - [x] IKEv1 with cert auth
 - [x] IKEv1 with HSRP failover
 - [x] DMVPN basic lab
-- [ ] DMVPN dual hub
-- [ ] DMVPN dual cloud
+- [x] DMVPN dual hub
+- [x] DMVPN dual cloud
 - [ ] IKEv2 load balancing
 - [x] Import site-to-site lab
 

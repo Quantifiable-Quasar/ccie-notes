@@ -48,7 +48,7 @@
 							"title": "2.2 - IOS CA for VPN Auth",
 							"notePosition": 30,
 							"prefix": null,
-							"isExpanded": true,
+							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -126,7 +126,7 @@
 							"title": "2.3 - FlexVPN, DMVPN, IPsec",
 							"notePosition": 40,
 							"prefix": null,
-							"isExpanded": true,
+							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -210,26 +210,6 @@
 								},
 								{
 									"isClone": false,
-									"noteId": "kG59sfZl0qf4",
-									"notePath": [
-										"root",
-										"y4v6Qzszu7ju",
-										"njn9HTvYe8LL",
-										"kG59sfZl0qf4"
-									],
-									"title": "Resources",
-									"notePosition": 100,
-									"prefix": null,
-									"isExpanded": false,
-									"type": "text",
-									"mime": "text/html",
-									"attributes": [],
-									"format": "markdown",
-									"dataFileName": "Resources.md",
-									"attachments": []
-								},
-								{
-									"isClone": false,
 									"noteId": "grBM3Ft58iDX",
 									"notePath": [
 										"root",
@@ -264,6 +244,84 @@
 											"dataFileName": "1_Basic DMVPN_image.png"
 										}
 									]
+								},
+								{
+									"isClone": false,
+									"noteId": "STYCqodb5Y7p",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"STYCqodb5Y7p"
+									],
+									"title": "Dual Hub DMVPN",
+									"notePosition": 120,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "markdown",
+									"dataFileName": "Dual Hub DMVPN.md",
+									"attachments": [
+										{
+											"attachmentId": "WscLAApREcGn",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "Dual Hub DMVPN_image.png"
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "8k6aAtMEWC8U",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"8k6aAtMEWC8U"
+									],
+									"title": "Dual-Hub Dual Cloud DMVPN",
+									"notePosition": 130,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "markdown",
+									"dataFileName": "Dual-Hub Dual Cloud DMVPN.md",
+									"attachments": [
+										{
+											"attachmentId": "Qo3SEKliNHEq",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "Dual-Hub Dual Cloud DMVPN_.png"
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "BefEt8jbi5Kf",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"njn9HTvYe8LL",
+										"BefEt8jbi5Kf"
+									],
+									"title": "Basic FlexVPN",
+									"notePosition": 140,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "markdown",
+									"dataFileName": "Basic FlexVPN.md",
+									"attachments": []
 								}
 							]
 						},
@@ -278,7 +336,7 @@
 							"title": "Labs",
 							"notePosition": 60,
 							"prefix": null,
-							"isExpanded": true,
+							"isExpanded": false,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -301,15 +359,7 @@
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
-									"attributes": [
-										{
-											"type": "relation",
-											"name": "internalLink",
-											"value": "gJlWD4vacXMB",
-											"isInheritable": false,
-											"position": 10
-										}
-									],
+									"attributes": [],
 									"format": "markdown",
 									"dataFileName": "Site-to-Site VPNs.md",
 									"attachments": [
@@ -404,25 +454,6 @@
 						},
 						{
 							"isClone": false,
-							"noteId": "gJlWD4vacXMB",
-							"notePath": [
-								"root",
-								"y4v6Qzszu7ju",
-								"gJlWD4vacXMB"
-							],
-							"title": "Todo",
-							"notePosition": 70,
-							"prefix": null,
-							"isExpanded": false,
-							"type": "text",
-							"mime": "text/html",
-							"attributes": [],
-							"format": "markdown",
-							"dataFileName": "Todo.md",
-							"attachments": []
-						},
-						{
-							"isClone": false,
 							"noteId": "WYwDBkPITBGx",
 							"notePath": [
 								"root",
@@ -432,7 +463,7 @@
 							"title": "2.5 Infrastructure Segmentation Methods",
 							"notePosition": 80,
 							"prefix": null,
-							"isExpanded": false,
+							"isExpanded": true,
 							"type": "text",
 							"mime": "text/html",
 							"attributes": [],
@@ -442,23 +473,77 @@
 							"children": [
 								{
 									"isClone": false,
-									"noteId": "OwzlQipYzABC",
+									"noteId": "OzRtKgC0Crd2",
 									"notePath": [
 										"root",
 										"y4v6Qzszu7ju",
 										"WYwDBkPITBGx",
-										"OwzlQipYzABC"
+										"OzRtKgC0Crd2"
 									],
-									"title": "resources",
-									"notePosition": 10,
+									"title": "VRF-Lite basics",
+									"notePosition": 50,
 									"prefix": null,
 									"isExpanded": false,
 									"type": "text",
 									"mime": "text/html",
 									"attributes": [],
 									"format": "markdown",
-									"dataFileName": "resources.md",
-									"attachments": []
+									"dataFileName": "VRF-Lite basics.md",
+									"attachments": [
+										{
+											"attachmentId": "P84rxZSk4FZy",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "VRF-Lite basics_image.png"
+										},
+										{
+											"attachmentId": "ST4IDaEY9b8k",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "1_VRF-Lite basics_image.png"
+										}
+									]
+								},
+								{
+									"isClone": false,
+									"noteId": "uSnGXnx1ivuk",
+									"notePath": [
+										"root",
+										"y4v6Qzszu7ju",
+										"WYwDBkPITBGx",
+										"uSnGXnx1ivuk"
+									],
+									"title": "FVRF",
+									"notePosition": 60,
+									"prefix": null,
+									"isExpanded": false,
+									"type": "text",
+									"mime": "text/html",
+									"attributes": [],
+									"format": "markdown",
+									"dataFileName": "FVRF.md",
+									"attachments": [
+										{
+											"attachmentId": "3k54B78LnjSI",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "FVRF_image.png"
+										},
+										{
+											"attachmentId": "bGEFja6okMEN",
+											"title": "image.png",
+											"role": "image",
+											"mime": "image/jpg",
+											"position": 10,
+											"dataFileName": "1_FVRF_image.png"
+										}
+									]
 								}
 							]
 						}

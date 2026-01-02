@@ -60,7 +60,8 @@ iosv-0(config-if)#tunnel protection ipsec profile ipsec-profile
 iosv-0(config-if)#bandwidth 1000
 iosv-0(config-if)#ip tcp adjust-mss 1360
 iosv-0(config-if)#ip nhrp holdtime 450
-iosv-0(config-if)#
+iosv-0(config-if)#ip redirect
+iosv-0(config-if)#no ip split-horizion eigrp 1
 ```
 
 ### Configure Spoke
@@ -78,7 +79,8 @@ iosv-2(config-if)#ip nhrp map multicast 203.0.113.1
 iosv-2(config-if)#ip nhrp network-id 100
 iosv-2(config-if)#ip nhrp holdtime 450
 iosv-2(config-if)#ip nhrp nhs 10.0.0.1
-iosv-2(config-if)#ip nhrp redirect
+iosv-2(config-if)#ip nhrp shortcut
+iosv-2(config-if)#no ip nhrp redirect
 iosv-2(config-if)#ip tcp adjust-mss 1360
 iosv-2(config-if)#tunnel source g0/0
 iosv-2(config-if)#tunnel mode gre multipoint
@@ -93,7 +95,7 @@ Finally, a standard EIGRP config is set up. The 192 network is the protected net
 ```
 iosv-3(config)#router eigrp 1
 iosv-3(config-router)#network 192.168.3.0 0.0.0.255
-iosv-3(config-router)#network 10.0.0.13 0.0.0.0 
+iosv-3(config-router)#network 10.0.0.0 0.0.0.255
 iosv-3(config-router)#
 ```
 
@@ -152,4 +154,21 @@ Tu0      10.0.0.12                                          203.0.113.12
 Tu0      10.0.0.13                                          203.0.113.13
          10.0.0.13/32                                D/r   
 iosv-0#
+```
+
+#### Phase 3
+
+```
+iosv-2#traceroute 192.168.1.1
+Type escape sequence to abort.
+Tracing the route to 192.168.1.1
+VRF info: (vrf in name/id, vrf out name/id)
+  1 10.0.0.1 54 msec
+  2 10.0.0.11 95 msec 45 msec * 
+iosv-2#traceroute 192.168.1.1
+Type escape sequence to abort.
+Tracing the route to 192.168.1.1
+VRF info: (vrf in name/id, vrf out name/id)
+  1 10.0.0.11 69 msec 47 msec * 
+iosv-2#
 ```
